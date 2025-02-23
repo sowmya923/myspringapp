@@ -1,0 +1,16 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+   name: myspringapp-build
+spec:
+  source:
+    type: Git
+    git:
+       uri: 'https://your-repo-url.git'|
+    contextDir: /
+  strategy:
+   type: Docker
+  output:
+    to:
+       kind: ImageStreamTag
+       name: 'myspringapp:latest'

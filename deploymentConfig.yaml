@@ -1,0 +1,21 @@
+apiVersion: apps.openshift.io/v1
+kind: DeploymentConfig
+metadata:
+  name: myspringapp
+spec:
+  replicas: 1
+  selector:
+    app: myspringapp
+  template:
+    metadata:
+      labels:
+        app: myspringapp
+    spec:
+      containers:
+        - name: myspringapp
+          image: 'myspringapp:latest'
+          ports:
+            - containerPort: 8080
+          env:
+            - name: JAVA_OPTS
+              value: '-Xmx512m'

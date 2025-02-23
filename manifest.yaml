@@ -1,0 +1,6 @@
+applications:
+  - name: myspringapp
+    memory: 16
+    instances: 1
+    docker:
+     image: myspringapplatest:latest
