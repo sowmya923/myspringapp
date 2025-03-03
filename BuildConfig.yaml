@@ -6,7 +6,7 @@ spec:
   source:
     type: Git
     git:
-       uri: 'https://your-repo-url.git'|
+       uri: 'https://github.com/sowmya923/myspringapp.git'|
     contextDir: /
   strategy:
    type: Docker

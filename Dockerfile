@@ -9,5 +9,5 @@ services:
     environment:
       - JAVA_OPTS=-Xmx512m
     voLumes:
-       - •/target/myspringapp-0.0.1-SNAPSHOT .jar: /app/myspringapp-0.0.1-SNAPSHOT.jar
-    command: ["java", "-jar", "/app/myseningapp-0.0. 1-SNAPSHOT. jar"]
+       - •/target/myspringapp-3.0.1-SNAPSHOT .jar: /app/myspringapp-3.0.1-SNAPSHOT.jar
+    command: ["java", "-jar", "/app/myseningapp-3.0. 1-SNAPSHOT. jar"]
