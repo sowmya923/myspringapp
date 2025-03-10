@@ -9,5 +9,5 @@ services:
     environment:
       - JAVA_OPTS=-Xmx512m
     volumes:
-      - "./target/myspringapp-3.0.1-SNAPSHOT.jar:/app/myspringapp-3.0.1-SNAPSHOT.jar"
-    command: ["java", "-jar", "/app/myspringapp-3.0.1-SNAPSHOT.jar"]
+      - "./target/myspringapp-4.0.1-SNAPSHOT.jar:/app/myspringapp-4.0.1-SNAPSHOT.jar"
+    command: ["java", "-jar", "/app/myspringapp-4.0.1-SNAPSHOT.jar"]
